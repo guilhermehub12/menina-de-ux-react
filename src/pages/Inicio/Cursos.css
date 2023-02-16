@@ -1,0 +1,158 @@
+.cursos {
+    background: rgba(245, 197, 210, 0.25);
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.cursos .section-title {
+    padding: 20px 0px;
+  }
+
+.cursos .section-title h2,
+.cursos .section-title p,
+.cursos h2 {
+    color: #20376C;
+    text-transform: uppercase;
+}
+
+.cursos .section-title h2 {
+    font-size: 14px;
+    padding: 0;
+    margin-bottom: 5px;
+    color: #20376C;
+    font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+    text-transform: uppercase;
+}
+
+.cursos .section-title p {
+    margin: 0;
+    font-size: 34px;
+    font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+    color: #20376C;
+}
+
+.cursos .post-box {
+    transition: 0.3s;
+    width: 20vw;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 0.3px solid #20376C41;
+    margin: 10px;
+    padding: 0%;
+}
+
+.cursos .post-box .post-img {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px 0px 0px 0px;
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+}
+
+.cursos .post-box .post-img img {
+    transition: 0.5s;
+    width: 100%;
+}
+
+.cursos .post-box .post-title {
+    font-size: 22px;
+    color: #20376C;
+    position: relative;
+    transition: 0.3s;
+    font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
+    margin: 20px 20px 5px 20px;
+}
+
+.cursos .post-date {
+    font-size: 18px;
+    color: #757575;
+    font-weight: 500;
+    font-family: "Avenir LT STD", 'Avenir LT STD', sans-serif;
+    margin: 0px 20px 10px 20px !important;
+}
+
+.cursos .post-box .readmore {
+    display: flex;
+    margin: 20px 20px;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1;
+    transition: 0.3s;
+    color: #20376C;
+    font-weight: bold;
+}
+
+.cursos .post-box .readmore i {
+    line-height: 0;
+    font-size: 16px;
+    color: #20376C;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.cursos .post-box:hover .post-img img {
+    transform: rotate(6deg) scale(1.2);
+}
+
+.cursos .text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.cursos .btn-ver-todos {
+    color: #20376C;
+    border-radius: 50px;
+    border: #20376C41 solid 1px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.cursos .btn-ver-todos:hover {
+    color: #20376C;
+    background: #FAFAFA;
+    border: #FAFAFA solid 1px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.5s;
+}
+
+@media (max-width: 1084px) {
+
+    .cursos .section-title h2 {
+        width: auto;
+        font-size: 14px;
+    }
+
+    .cursos .section-title p {
+        width: auto;
+        font-size: 26px;
+    }
+
+    .cursos .section-title h2::after {
+        width: 50px;
+    }
+
+    .cursos .post-box {
+        width: 90vw;
+        height: auto;
+    }
+
+    .cursos .post-box .img-fluid {
+        width: 100vw;
+    }
+
+    .cursos .text-center {
+        width: auto;
+    }
+
+    .cursos .btn-ver-todos {
+        width: 90vw;
+    }
+}
