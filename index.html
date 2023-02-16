@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Menina de UX</title>
-    <meta http-equiv="content-language" content="pt-br">
-    <meta name="author" content="Rebeca Belin">
-    <meta name="description"
-        content="Ajudando meninas como eu que querem se tornar grandes UX/UI Designers e conquistarem o mundo com suas habilidades e grande potencial">
-    <meta name="keywords" content="design, UX, ui, menina, cursos, Processos Seletivos">
-    <meta name="theme-color" content="#20376C">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <meta property="og:title" content="Menina de UX">
-    <meta property="og:description"
-        content="Ajudando meninas como eu que querem se tornar grandes UX/UI Designers e conquistarem o mundo com suas habilidades e grande potencial">
-    <meta property="theme-color" content="#20376C">
-    
+  <title>Menina de UX</title>
+  <meta http-equiv="content-language" content="pt-br">
+  <meta name="author" content="Rebeca Belin">
+  <meta name="description"
+    content="Ajudando meninas como eu que querem se tornar grandes UX/UI Designers e conquistarem o mundo com suas habilidades e grande potencial">
+  <meta name="keywords" content="design, UX, ui, menina, cursos, Processos Seletivos">
+  <meta name="theme-color" content="#20376C">
 
-    <link href="src/assets/img/logo.webp" rel="icon">
-    <link href="src/assets/img/mobile.webp" rel="mobile-icon">
-    <link href="src/assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <meta property="og:title" content="Menina de UX">
+  <meta property="og:description"
+    content="Ajudando meninas como eu que querem se tornar grandes UX/UI Designers e conquistarem o mundo com suas habilidades e grande potencial">
+  <meta property="theme-color" content="#20376C">
+
+
+  <link href="src/assets/img/logo.webp" rel="icon">
+  <link href="src/assets/img/mobile.webp" rel="mobile-icon">
+  <link href="src/assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+</head>
+
+<body>
+  <div id="root"></div>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
