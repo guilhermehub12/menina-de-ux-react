@@ -1,0 +1,41 @@
+#header {
+    height: 80px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+  }
+  
+  #header.header-transparent {
+    background: transparent;
+  }
+  
+  #header.header-scrolled {
+    background: #FAFAFA;
+  }
+  
+  #header .logo img {
+    padding: 0;
+    max-height: 40px;
+  }
+  
+  #header .logo h1 {
+    font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  #header .logo h1 a,
+  #header .logo h1 a:hover {
+    color: #20376C;
+    text-decoration: none;
+  }
+  
+  
+  @media (max-width: 1084px) {
+    #header .logo img {
+      margin: 20px 0px;
+    }
+  }

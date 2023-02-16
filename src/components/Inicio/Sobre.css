@@ -1,0 +1,116 @@
+.sobre h1 {
+    font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+    font-size: 32px;
+    color: #20376C;
+}
+
+.sobre p {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #20376C;
+    font-style: normal;
+    text-align: left;
+    margin: 10px 0px 20px;
+}
+
+.sobre a:hover {
+    color: #20376C;
+    transition: 0.5s;
+}
+
+.sobre .img-fluid {
+    width: 70%;
+    text-align: right;
+}
+
+.sobre .btn-quero-apoiar {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #FAFAFA;
+    background: #4678BC;
+    border-radius: 50px;
+    text-align: center;
+    border: #4678BC solid 1px;
+    padding: 10px 30px;
+    margin-right: 5px;
+}
+
+.sobre .btn-quero-apoiar:hover {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    border-radius: 50px;
+    text-align: center;
+    background: none;
+    color: #4678BC;
+    border: #4678BC solid 1px;
+}
+
+.sobre .btn-quero-apoiar-2 {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #D5626D;
+    background: none;
+    border-radius: 50px;
+    text-align: center;
+    border: #D5626D solid 1px;
+    padding: 10px 30px;
+}
+
+.sobre .btn-quero-apoiar-2:hover {
+    background: #D5626D;
+    color: #FAFAFA;
+}
+
+@media (max-width: 1084px) {
+
+    .sobre .container {
+        padding: 10px 36px;
+    }
+
+    .sobre .btn-quero-apoiar {
+        width: 100%;
+    }
+
+    .sobre .btn-quero-apoiar {
+        width: 80vw;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .sobre .btn-quero-apoiar-2 {
+        width: 80vw;
+        font-size: 16px;
+    }
+
+    .sobre .img-fluid {
+        width: 80vw;
+        max-width: 90vw;
+        margin: 20px 0px;
+    }
+
+    .sobre p {
+        font-size: 18px;
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre .text-center {
+        text-align: left !important;
+    }
+}
