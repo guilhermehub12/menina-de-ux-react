@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "NCS Radhiumz";
+    src: url("/src/fonts/NCS\ Radhiumz.ttf");
+}
+
 body {
     font-family: "Avenir LT STD", sans-serif;
     color: #20376C;
@@ -30,12 +35,8 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid #FAFAFA;
 }
 
-/*--------------------------------------------------------------
-# Disable AOS delay on mobile
---------------------------------------------------------------*/
-
 @media screen and (max-width: 768px) {
     [data-aos-delay] {
-      transition-delay: 0 !important;
+        transition-delay: 0 !important;
     }
-  }
+}
