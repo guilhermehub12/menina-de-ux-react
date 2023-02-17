@@ -6,7 +6,7 @@ import Cursos from "../pages/Inicio/Cursos.jsx"
 import Telegram from "../pages/Inicio/Telegram.jsx"
 import Contato from "../pages/Inicio/Contato.jsx"
 import ArrowToTop from "../components/ArrowToTop/ArrowToTop.jsx"
-import Libras from "../components/Libras.jsx"
+import Libras from "../utils/Libras.jsx"
 
 function Inicio() {
   return (
