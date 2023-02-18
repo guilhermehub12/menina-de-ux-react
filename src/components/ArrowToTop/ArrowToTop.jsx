@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { ArrowUp } from "react-bootstrap-icons";
 import "./ArrowToTop.css";
 
@@ -29,14 +30,14 @@ function ArrowToTop() {
   };
 
   return (
-    <a
+    <Link
       onClick={handleClick}
       className={`back-to-top ${
         showButton ? "active" : ""
       } d-flex align-items-center justify-content-center`}
     >
       <ArrowUp color={"#FFF"} />
-    </a>
+    </Link>
   );
 }
 

@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import NavBar from "../NavBar/NavBar.jsx";
 import "./Header.css";
 
@@ -31,13 +32,13 @@ function Header() {
     >
       <div className="container d-flex align-items-center justify-content-between">
         <div className="logo">
-          <a href="#">
+          <Link to="inicio">
             <img
               src="src/assets/img/header-logo.webp"
-              alt=""
+              alt="Logo Menina de UX"
               className="img-fluid"
             />
-          </a>
+          </Link>
         </div>
 
         <NavBar />
