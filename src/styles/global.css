@@ -1,0 +1,218 @@
+section {
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #FAFAFA;
+}
+
+.section-title {
+  padding: 20px 0px;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 5px;
+  color: #20376C;
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+  text-transform: uppercase;
+}
+
+.section-title p {
+  margin: 0;
+  font-size: 34px;
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+  color: #20376C;
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 10% 0 0;
+    overflow: hidden;
+  }
+
+  .section-title p {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100vw;
+  }
+
+  .section-title h2 {
+    font-size: 18px;
+    width: 100vw;
+  }
+}
+
+
+.sobre h1,
+.telegram h1,
+.apoie h1,
+.em-construcao h1,
+.contato h1 {
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+  font-size: 32px;
+  color: #20376C;
+}
+
+.sobre p,
+.telegram p,
+.apoie p,
+.em-construcao p,
+.contato p {
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #20376C;
+  font-style: normal;
+  text-align: left;
+  margin: 10px 0px 20px;
+}
+
+.sobre a:hover,
+.telegram a:hover,
+.apoie a:hover,
+.em-construcao a:hover,
+.contato a:hover {
+  color: #20376C;
+  transition: 0.5s;
+}
+
+.sobre .img-fluid,
+.telegram .img-fluid,
+.apoie .img-fluid,
+.em-construcao .img-fluid,
+.contato .img-fluid {
+  width: 70%;
+  text-align: right;
+}
+
+.sobre .btn-quero-apoiar,
+.telegram .btn-quero-apoiar,
+.apoie .btn-quero-apoiar,
+.conteudos .btn-projeto,
+.sobre .btn-projeto {
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #FAFAFA;
+  background: #4678BC;
+  border-radius: 50px;
+  text-align: center;
+  border: #4678BC solid 1px;
+  padding: 10px 30px;
+}
+
+.sobre .btn-quero-apoiar:hover,
+.telegram .btn-quero-apoiar:hover,
+.apoie .btn-quero-apoiar:hover,
+.conteudos .btn-projeto:hover,
+.sobre .btn-projeto:hover {
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 50px;
+  transition: 0.5s;
+  border-radius: 50px;
+  text-align: center;
+  background: none;
+  color: #4678BC;
+  border: #4678BC solid 1px;
+}
+
+.sobre .btn-quero-apoiar-2,
+.telegram .btn-quero-apoiar-2,
+.apoie .btn-quero-apoiar-2 {
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #D5626D;
+  background: none;
+  border-radius: 50px;
+  text-align: center;
+  border: #D5626D solid 1px;
+  padding: 10px 30px;
+}
+
+.sobre .btn-quero-apoiar-2:hover,
+.telegram .btn-quero-apoiar-2:hover,
+.apoie .btn-quero-apoiar-2:hover {
+  background: #D5626D;
+  color: #FAFAFA;
+}
+
+@media (max-width: 1084px) {
+
+  .sobre .container,
+  .telegram .container,
+  .apoie .container,
+  .em-construcao .container,
+  .cursos .cursos-container,
+  .contato .container {
+    padding: 10px 36px;
+  }
+
+  .sobre .btn-quero-apoiar,
+  .telegram .btn-quero-apoiar,
+  .apoie .btn-quero-apoiar,
+  .conteudos .btn-projeto {
+    width: 100%;
+  }
+
+  .sobre .btn-quero-apoiar,
+  .telegram .btn-quero-apoiar,
+  .apoie .btn-quero-apoiar {
+    width: 80vw;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .sobre .btn-quero-apoiar-2,
+  .telegram .btn-quero-apoiar-2,
+  .apoie .btn-quero-apoiar-2 {
+    width: 80vw;
+    font-size: 16px;
+  }
+
+  .sobre .img-fluid,
+  .telegram .img-fluid,
+  .apoie .img-fluid,
+  .em-construcao .img-fluid,
+  .contato .img-fluid {
+    width: 80vw;
+    max-width: 90vw;
+    margin: 20px 0px;
+  }
+
+  .sobre p,
+  .telegram p,
+  .apoie p,
+  .em-construcao p {
+    font-size: 18px;
+    width: 100%;
+    height: auto;
+  }
+
+  .sobre .text-center,
+  .telegram .text-center,
+  .apoie .text-center,
+  .em-construcao .text-center {
+    text-align: left !important;
+  }
+
+  .telegram .text-center-2 {
+    text-align: left !important;
+  }
+}
