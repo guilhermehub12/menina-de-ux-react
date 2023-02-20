@@ -17,7 +17,7 @@
   font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
   font-style: normal;
   line-height: 110%;
-  text-align: left;
+  text-align: left !important;
   margin-bottom: 20px;
 }
 
@@ -39,7 +39,7 @@
   width: 100%;
   color: #20376C;
   font-style: normal;
-  text-align: left;
+  text-align: left !important;
   margin-bottom: 20px;
 }
 
