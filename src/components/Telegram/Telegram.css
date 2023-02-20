@@ -1,0 +1,124 @@
+.telegram {
+    padding-top: 5%;
+}
+
+.telegram h1 {
+    font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+    font-size: 32px;
+    color: #20376C;
+}
+
+.telegram p {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #20376C;
+    font-style: normal;
+    text-align: left;
+    margin: 10px 0px 20px;
+}
+
+.telegram a:hover {
+    color: #20376C;
+    transition: 0.5s;
+}
+
+.telegram .img-fluid {
+    width: 70%;
+    text-align: right;
+}
+
+.telegram .btn-quero-apoiar {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #FAFAFA;
+    background: #4678BC;
+    border-radius: 50px;
+    text-align: center;
+    border: #4678BC solid 1px;
+    padding: 10px 30px;
+    margin-right: 5px;
+}
+
+.telegram .btn-quero-apoiar:hover {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    border-radius: 50px;
+    text-align: center;
+    background: none;
+    color: #4678BC;
+    border: #4678BC solid 1px;
+}
+
+.telegram .btn-quero-apoiar-2 {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #D5626D;
+    background: none;
+    border-radius: 50px;
+    text-align: center;
+    border: #D5626D solid 1px;
+    padding: 10px 30px;
+}
+
+.telegram .btn-quero-apoiar-2:hover {
+    background: #D5626D;
+    color: #FAFAFA;
+}
+
+@media (max-width: 1084px) {
+
+    .telegram .container {
+        padding: 10px 36px;
+    }
+
+    .telegram .btn-quero-apoiar {
+        width: 100%;
+    }
+
+    .telegram .btn-quero-apoiar {
+        width: 80vw;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .telegram .btn-quero-apoiar-2 {
+        width: 80vw;
+        font-size: 16px;
+    }
+
+    .telegram .img-fluid {
+        width: 80vw;
+        max-width: 90vw;
+        margin: 20px 0px;
+    }
+
+    .telegram p {
+        font-size: 18px;
+        width: 100%;
+        height: auto;
+    }
+
+    .telegram .text-center {
+        text-align: left !important;
+    }
+
+    .telegram .text-center-2 {
+        text-align: left !important;
+    }
+}
