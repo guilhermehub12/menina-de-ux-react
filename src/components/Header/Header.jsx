@@ -34,7 +34,7 @@ function Header() {
         <div className="logo">
           <Link to="inicio">
             <img
-              src="src/assets/img/header-logo.webp"
+              src="../src/assets/img/header-logo.webp"
               alt="Logo Menina de UX"
               className="img-fluid"
             />
