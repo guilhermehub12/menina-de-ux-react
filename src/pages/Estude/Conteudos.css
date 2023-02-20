@@ -1,0 +1,256 @@
+.conteudos .conteudo {
+    border: #d9d9d9 solid 1px;
+    border-radius: 20px;
+    background-color: #FAFAFA;
+    height: auto;
+    box-shadow: #dfdfdf 0px 0px 10px;
+}
+
+.conteudos .title {
+    font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+.conteudos h1 {
+    font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+    font-size: 34px;
+    color: #20376C;
+    width: 100%;
+}
+
+.conteudos p {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    width: 80%;
+    color: #20376C;
+    font-style: normal;
+    text-align: left;
+    width: 100%;
+}
+
+.conteudos .img-fluid {
+    width: 80%;
+}
+
+.conteudos .btn-quero-apoiar {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #FAFAFA;
+    background: #4678BC;
+    border-radius: 50px;
+    text-align: center;
+    border: #4678BC solid 1px;
+}
+
+.conteudos .btn-quero-apoiar:hover {
+    background: #FAFAFA;
+    color: #4678BC;
+    border: #4678BC solid 1px;
+}
+
+.conteudos .btn-em-breve,
+.conteudos .btn-em-breve-2 {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #4f4f4f;
+    background: #d5d5d5;
+    border-radius: 50px;
+    text-align: center;
+    border: #FAFAFA solid 1px;
+    padding: 10px 30px;
+}
+
+.conteudos .btn-em-breve-2 {
+    padding: 10px 30px;
+}
+
+.conteudos .post-box {
+    transition: 0.3s;
+    width: 16vw;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #20376C;
+    border: 0.3px solid #cbcbcb;
+    background-color: rgba(247, 247, 247, 0.2);
+    margin: 10px;
+    padding: 20px;
+}
+
+.conteudos .post-box .post-img {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px 0px 0px 0px;
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.conteudos .post-box .post-img img {
+    transition: 0.5s;
+    width: 100%;
+}
+
+.conteudos .post-box .post-title {
+    font-size: 24px;
+    color: #20376C;
+    position: relative;
+    transition: 0.3s;
+    font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
+    margin-top: 10px;
+}
+
+.conteudos .description {
+    font-family: "Avenir LT STD", 'Avenir LT STD', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #20376C;
+    height: 36%;
+    margin-bottom: 30px;
+}
+
+.conteudos .post-date {
+    font-size: 16px;
+    color: #757575;
+    font-weight: 500;
+    font-family: "Avenir LT STD", 'Avenir LT STD', sans-serif;
+}
+
+.conteudos .post-box .readmore {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1;
+    transition: 0.3s;
+    color: #20376C;
+}
+
+.conteudos .post-box .readmore i {
+    line-height: 0;
+    font-size: 16px;
+    color: #20376C;
+}
+
+.conteudos .post-box:hover .post-img img {
+    transform: rotate(6deg) scale(1.2);
+}
+
+.conteudos .text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-width: 1350px) {
+    .conteudos .post-box {
+        width: 20vw;
+        height: auto;
+    }
+
+    .conteudos .post-box .post-title {
+        font-size: 20px;
+    }
+
+    .conteudos .post-date {
+        font-size: 16px;
+    }
+
+    .conteudos .description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .conteudos {
+        margin: 20px 0px;
+        width: 100%;
+    }
+
+    .conteudos .section-title h2 {
+        width: auto;
+    }
+
+    .conteudos .section-title p {
+        width: auto;
+    }
+
+    .conteudos .post-box {
+        width: 80vw;
+        height: 20%;
+        left: 0px !important;
+    }
+
+    .conteudos .post-box .img-fluid {
+        width: 80%;
+    }
+
+    .conteudos .text-center {
+        width: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 890px) {
+    .conteudos .post-box {
+        width: 80vw;
+        height: 30%;
+        left: 0px !important;
+    }
+
+    .conteudos .text-center {
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .conteudos .description {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1084px) {
+
+    .conteudos .btn-quero-apoiar {
+        font-size: 16px;
+        width: 70vw;
+    }
+
+    .conteudos .btn-em-breve {
+        width: 70vw;
+    }
+
+    .conteudos .img-fluid {
+        width: 80vw;
+        max-width: 80vw;
+    }
+
+    .conteudos h1 {
+        width: auto;
+    }
+
+    .conteudos p {
+        font-size: 18px;
+        width: 80vw;
+    }
+
+    .conteudos .text-center {
+        text-align: left !important;
+    }
+}
+
