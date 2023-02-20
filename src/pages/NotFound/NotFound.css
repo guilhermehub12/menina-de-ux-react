@@ -1,0 +1,41 @@
+.em-construcao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.em-construcao .img-fluid {
+    width: 100%;
+}
+
+.em-construcao .btn-voltar-inicio {
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #FAFAFA;
+    background: #4678BC;
+    border-radius: 50px;
+    text-align: center;
+    border: #FAFAFA solid 1px;
+}
+
+.em-construcao .btn-voltar-inicio:hover {
+    background: #FAFAFA;
+    color: #4678BC;
+    border: #FAFAFA solid 1px;
+}
+
+@media (max-width: 980px) {
+
+    .em-construcao .btn-voltar-inicio,
+    .apoie-2 .btn-quero-apoiar,
+    .apoie-2 .btn-quero-apoiar-2 {
+        font-size: 16px;
+        width: auto;
+    }
+}
