@@ -1,21 +1,22 @@
-.cursos {
+.cursos-inicio {
     background: rgba(245, 197, 210, 0.25);
     background-repeat: no-repeat;
     height: auto;
+    padding: 0;
 }
 
-.cursos .section-title {
+.cursos-inicio .section-title {
     padding: 20px 0px;
-  }
+}
 
-.cursos .section-title h2,
-.cursos .section-title p,
-.cursos h2 {
+.cursos-inicio .section-title h2,
+.cursos-inicio .section-title p,
+.cursos-inicio h2 {
     color: #20376C;
     text-transform: uppercase;
 }
 
-.cursos .section-title h2 {
+.cursos-inicio .section-title h2 {
     font-size: 14px;
     padding: 0;
     margin-bottom: 5px;
@@ -24,14 +25,14 @@
     text-transform: uppercase;
 }
 
-.cursos .section-title p {
+.cursos-inicio .section-title p {
     margin: 0;
     font-size: 34px;
     font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
     color: #20376C;
 }
 
-.cursos .post-box {
+.cursos-inicio .post-box {
     transition: 0.3s;
     width: 20vw;
     height: auto;
@@ -45,7 +46,7 @@
     padding: 0%;
 }
 
-.cursos .post-box .post-img {
+.cursos-inicio .post-box .post-img {
     overflow: hidden;
     position: relative;
     border-radius: 8px 0px 0px 0px;
@@ -54,12 +55,11 @@
     background-size: cover;
 }
 
-.cursos .post-box .post-img img {
+.cursos-inicio .post-box .post-img img {
     transition: 0.5s;
-    width: 100%;
 }
 
-.cursos .post-box .post-title {
+.cursos-inicio .post-box .post-title {
     font-size: 22px;
     color: #20376C;
     position: relative;
@@ -68,7 +68,7 @@
     margin: 20px 20px 5px 20px;
 }
 
-.cursos .post-date {
+.cursos-inicio .post-date {
     font-size: 18px;
     color: #757575;
     font-weight: 500;
@@ -76,7 +76,7 @@
     margin: 0px 20px 10px 20px !important;
 }
 
-.cursos .post-box .readmore {
+.cursos-inicio .post-box .readmore {
     display: flex;
     margin: 20px 20px;
     align-items: center;
@@ -87,7 +87,7 @@
     font-weight: bold;
 }
 
-.cursos .post-box .readmore i {
+.cursos-inicio .post-box .readmore .seta {
     line-height: 0;
     font-size: 16px;
     color: #20376C;
@@ -95,11 +95,11 @@
     font-weight: bold;
 }
 
-.cursos .post-box:hover .post-img img {
+.cursos-inicio .post-box:hover .post-img img {
     transform: rotate(6deg) scale(1.2);
 }
 
-.cursos .text-center {
+.cursos-inicio .text-center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,15 +107,23 @@
     margin-bottom: 5%;
 }
 
-.cursos .btn-ver-todos {
+.cursos-inicio .btn-ver-todos {
     color: #20376C;
     border-radius: 50px;
     border: #20376C41 solid 1px;
     margin-top: 20px;
     transition: 0.5s;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    text-align: center;
+    padding: 10px 30px;
 }
 
-.cursos .btn-ver-todos:hover {
+.cursos-inicio .btn-ver-todos:hover {
     color: #20376C;
     background: #FAFAFA;
     border: #FAFAFA solid 1px;
@@ -125,34 +133,34 @@
 
 @media (max-width: 1084px) {
 
-    .cursos .section-title h2 {
+    .cursos-inicio .section-title h2 {
         width: auto;
         font-size: 14px;
     }
 
-    .cursos .section-title p {
+    .cursos-inicio .section-title p {
         width: auto;
         font-size: 26px;
     }
 
-    .cursos .section-title h2::after {
+    .cursos-inicio .section-title h2::after {
         width: 50px;
     }
 
-    .cursos .post-box {
+    .cursos-inicio .post-box {
         width: 90vw;
         height: auto;
     }
 
-    .cursos .post-box .img-fluid {
+    .cursos-inicio .post-box .img-fluid {
         width: 100vw;
     }
 
-    .cursos .text-center {
+    .cursos-inicio .text-center {
         width: auto;
     }
 
-    .cursos .btn-ver-todos {
+    .cursos-inicio .btn-ver-todos {
         width: 90vw;
     }
 }
