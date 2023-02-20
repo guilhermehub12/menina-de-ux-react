@@ -1,5 +1,6 @@
+import { React, useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { List, X } from "react-bootstrap-icons";
-import { React, useState } from "react";
 import "./NavBar.css";
 
 function NavBar() {
@@ -25,10 +26,16 @@ function NavBar() {
   },
   {
     page: "Contato",
-    href: "/contato",
+    href: "/contatos",
   }];
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [isListIconActive, setIsListIconActive] = useState(true);
+  const location = useLocation();
+
+  useEffect(() => {
+    setIsMobileNavOpen(false);
+    setIsListIconActive(true);
+    }, [location]);
 
   const handleMobileNavToggle = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -50,16 +57,16 @@ function NavBar() {
     <nav id="navbar" className={navbarClass}>
       <ul>
         {pages.map((page, index) => {
-          const isAtCurrentPage = window.location.pathname === page.href;
+          const isAtCurrentPage = location.pathname === page.href;
           return (
             <li key={`${page}-${index}`}>
-              <a
+              <Link
                 className={`nav-link ${isAtCurrentPage ? "scrollto active" : ""}`}
-                href={page.href}
+                to={page.href}
                 onClick={handleMobileDropdownClick}
               >
                 {page.page}
-              </a>
+              </Link>
             </li>
           );
         })}
