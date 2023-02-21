@@ -1,6 +1,8 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { ChevronLeft, ChevronRight } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
 
 function CarouselItem({ props }) {
   return (
@@ -16,28 +18,37 @@ function CarouselItem({ props }) {
       {props.map((carouselItem, index) => {
         return (
           <Carousel.Item key={index}>
-            <div className="container">
-              <div className="row p-2">
-                <div className="mx-auto col-md-8 col-lg-6 order-lg-last align-self-center">
+            <Container>
+              <Row className="p-2">
+                <Col
+                  md={8}
+                  lg={6}
+                  className="mx-auto order-lg-last align-self-center"
+                >
                   <img
+                    style={{ width: "80%" }}
                     className="img-fluid"
-                    src={carouselItem.imagemLink}
+                    src={carouselItem.imagemLink.imagem}
                     alt={carouselItem.alt}
                   />
-                </div>
-                <div className="col-lg-6 mb-0 d-flex align-items-center">
+                </Col>
+                <Col md={8} lg={6} className="mb-0 d-flex align-items-center">
                   <div className="text-align-left align-self-center">
                     <h1 className="h1">{carouselItem.titulo}</h1>
                     <p className="p">{carouselItem.descricao}</p>
+                    <h2 className="h2">{carouselItem.subTitle}</h2>
+                    <p className="p">{carouselItem.subdescricao}</p>
+                    <h2 className="h2">{carouselItem.subsubTitle}</h2>
+                    <p className="p">{carouselItem.subsubdescricao}</p>
                     <div className="text-lg-start" style={{ marginBottom: 30 }}>
-                      <a href={carouselItem.botaoLink} className="btn-projeto">
+                      <Link to={carouselItem.botaoLink} className="btn-projeto">
                         {carouselItem.botaoTexto}
-                      </a>
+                      </Link>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
+                </Col>
+              </Row>
+            </Container>
           </Carousel.Item>
         );
       })}
