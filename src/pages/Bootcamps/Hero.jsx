@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import "./Hero.css";
 
 function Hero() {
   return (
