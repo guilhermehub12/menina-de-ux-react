@@ -28,13 +28,6 @@
   transition: 0.3s;
 }
 
-.navbar a,
-.navbar a:focus {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-}
-
 .navbar>Ul>Li>A:before {
   content: "";
   position: absolute;
