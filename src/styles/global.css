@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "NCS Radhiumz";
-  src: url("../../public/fonts/NCS-Radhiumz.ttf") format("ttf");
+  src: url("../fonts/NCS-Radhiumz.ttf");
 }
 
 body {
