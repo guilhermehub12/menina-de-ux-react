@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css"
 import "./styles/global.css";
 import Inicio from "./routes/Inicio";
 import Estude from "./routes/Estude";
@@ -6,8 +7,8 @@ import Cursos from "./routes/Cursos";
 import Bootcamps from "./routes/Bootcamps";
 import Sobre from "./routes/Sobre";
 import Contatos from "./routes/Contatos";
-import { Aos } from "./utils/Aos";
 import NotFound from "./pages/NotFound/NotFound";
+import { Aos } from "./utils/Aos";
 import Libras from "./utils/Libras";
 
 function App() {

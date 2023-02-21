@@ -1,8 +1,6 @@
-@import url("bootstrap/dist/css/bootstrap.min.css");
-
 @font-face {
   font-family: "NCS Radhiumz";
-  src: url("../fonts/NCS\ Radhiumz.ttf");
+  src: url("src/fonts/NCS\ Radhiumz.ttf");
 }
 
 body {
