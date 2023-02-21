@@ -1,9 +1,9 @@
-.hero {
+.hero-sobre {
     background: rgba(245, 197, 210, 0.25);
     padding: 120px 0px 70px;
 }
 
-.hero h1 {
+.hero-sobre h1 {
     font-size: 46px;
     color: #20376C;
     font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
@@ -13,7 +13,7 @@
     margin-bottom: 20px;
 }
 
-.hero p {
+.hero-sobre p {
     font-size: 18px;
     font-weight: 400;
     color: #20376C;
@@ -23,24 +23,24 @@
 }
 
 @media (min-width: 1024px) {
-    .hero {
+    .hero-sobre {
         background-attachment: fixed;
     }
 }
 
 @media (max-width: 991px) {
-    .hero {
+    .hero-sobre {
         height: 70%;
     }
 
-    .hero h1 {
+    .hero-sobre h1 {
         text-align: center;
         font-size: 36px;
         line-height: 40px;
         width: auto;
     }
 
-    .hero p {
+    .hero-sobre p {
         text-align: center;
         font-size: 16px;
         width: auto;
@@ -48,7 +48,7 @@
 }
 
 @media (max-width: 575px) {
-    .hero .hero-img img {
+    .hero-sobre .hero-img img {
         max-width: 300px;
     }
 }
