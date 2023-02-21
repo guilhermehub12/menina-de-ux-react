@@ -1,10 +1,4 @@
-@font-face {
-  font-family: "NCS Radhiumz";
-  src: url("src/fonts/NCS\ Radhiumz.ttf");
-}
-
 body {
-  font-family: "Avenir LT STD", sans-serif;
   color: #20376C;
   background-color: #FAFAFA;
 }
