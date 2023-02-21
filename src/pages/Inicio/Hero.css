@@ -1,4 +1,4 @@
-.hero,
+.hero-inicio,
 .hero-carousel {
   background: rgba(245, 197, 210, 0.25);
   width: 100%;
@@ -9,7 +9,7 @@
   padding: 60px 0px 0px;
 }
 
-.hero h1,
+.hero-inicio h1,
 .hero-carousel h1 {
   font-size: 42px;
   width: 100%;
@@ -17,22 +17,22 @@
   font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
   font-style: normal;
   line-height: 110%;
-  text-align: left !important;
+  text-align: left;
   margin-bottom: 20px;
 }
 
-.hero .hero-img,
+.hero-inicio .hero-img,
 .hero-carousel .hero-img {
   text-align: right;
 }
 
-.hero .hero-img img,
+.hero-inicio .hero-img img,
 .hero-carousel .hero-img img {
   border-radius: 20px;
   width: 70%;
 }
 
-.hero p,
+.hero-inicio p,
 .hero-carousel p {
   font-size: 20px;
   font-weight: 500;
@@ -43,8 +43,8 @@
   margin-bottom: 20px;
 }
 
-.hero .btn-descobrir-cursos,
-.hero .btn-descobrir-processos,
+.hero-inicio .btn-descobrir-cursos,
+.hero-inicio .btn-descobrir-processos,
 .cursos .btn-ver-todos {
   font-size: 18px;
   font-weight: 500;
@@ -56,25 +56,25 @@
   padding: 10px 30px;
 }
 
-.hero .btn-descobrir-cursos {
+.hero-inicio .btn-descobrir-cursos {
   color: #FAFAFA;
   background: #4678BC;
   border: #4678BC solid 1px;
   margin-right: 10px;
 }
 
-.hero .btn-descobrir-cursos:hover {
+.hero-inicio .btn-descobrir-cursos:hover {
   background: #FAFAFA;
   color: #4678BC;
   border: #FAFAFA solid 1px;
 }
 
-.hero .btn-descobrir-processos {
+.hero-inicio .btn-descobrir-processos {
   color: #D5626D;
   border: #D5626D solid 1px;
 }
 
-.hero .btn-descobrir-processos:hover {
+.hero-inicio .btn-descobrir-processos:hover {
   background: #D5626D;
   color: #FAFAFA;
   border: #D5626D solid 1px;
@@ -82,25 +82,25 @@
 
 @media (min-width: 1350px) {
 
-  .hero,
+  .hero-inicio,
   .hero-carousel {
     padding: 70px 0px;
   }
 }
 
 @media (min-width: 1024px) {
-  .hero {
+  .hero-inicio {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 991px) {
-  .hero {
+  .hero-inicio {
     height: auto;
     padding: 100px 0px 0px !important;
   }
 
-  .hero h1,
+  .hero-inicio h1,
   .hero-carousel h1 {
     text-align: left;
     font-size: 36px;
@@ -108,49 +108,49 @@
     width: 100%;
   }
 
-  .hero .left {
+  .hero-inicio .left {
     width: 100%;
   }
 
-  .hero p {
+  .hero-inicio p {
     text-align: left;
     font-size: 18px;
     width: 100%;
   }
 
-  .hero .hero-img {
+  .hero-inicio .hero-img {
     text-align: right;
     width: 80%;
     margin: 10vw;
   }
 
-  .hero .btn-descobrir-cursos {
+  .hero-inicio .btn-descobrir-cursos {
     width: 80vw;
     margin-bottom: 10px;
   }
 
-  .hero .btn-descobrir-processos {
+  .hero-inicio .btn-descobrir-processos {
     width: 80vw;
   }
 }
 
 @media (min-width: 1024px) {
-  .hero {
+  .hero-inicio {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  .hero {
+  .hero-inicio {
     text-align: center;
   }
 
-  .hero h1 {
+  .hero-inicio h1 {
     font-size: 32px;
     width: 100%;
   }
 
-  .hero .hero-img img {
+  .hero-inicio .hero-img img {
     width: 100%;
   }
 }
