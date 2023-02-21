@@ -1,92 +1,77 @@
 import React from "react";
+import { Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import AllImages from "../../utils/AllImages.js";
 
 function Conteudos() {
+  const miniCursos = [
+    {
+      src: { image: AllImages.Curriculo },
+      alt: "Currículo de Milhões",
+      titulo: "Currículo de Milhões",
+      descricao:
+        "Aprenda a criar o currículo campeão para enviar nos processos seletivos e descubra coisas super importantes que você não sabia antes!",
+      btnHref: "#",
+      btnClass: "btn-em-breve-2",
+      btnTitulo: "Em Breve",
+    },
+    {
+      src: { image: AllImages.ConexoesLinkedin },
+      alt: "O poder do LinkedIn",
+      titulo: "O poder do LinkedIn",
+      descricao:
+        "Tudo sobre a maior rede profissional de todas e as melhores dicas para deixar o seu perfil atrativo para recrutadores!",
+      btnHref: "#",
+      btnClass: "btn-em-breve-2",
+      btnTitulo: "Em Breve",
+    },
+    {
+      src: { image: AllImages.PreenchendoPostIts },
+      alt: "Card Sorting",
+      titulo: "Card Sorting",
+      descricao:
+        "Conheça mais sobre essa ferramenta bastante utilizada durante para trabalhar a arquitetura de informação de um site ou aplicativo!",
+      btnHref: "/mini-cursos/card-sorting",
+      btnClass: "btn-projeto",
+      btnTitulo: "Ver mais",
+    },
+    {
+      src: { image: AllImages.CasalJuntandoQuebraCabecas },
+      alt: "Proposta de Valor",
+      titulo: "Proposta de Valor",
+      descricao:
+        "O que é, como fazer e como ela pode mudar o seu negócio. Hoje, no Menina de UX repórter!",
+      btnHref: "/mini-cursos/proposta-de-valor",
+      btnClass: "btn-projeto",
+      btnTitulo: "Ver mais",
+    },
+  ];
+
   return (
-    <div className="conteudos-container">
-      <div
-        className="row justify-content-center"
+    <Container>
+      <Row
+        className="justify-content-center"
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <div className="post-box">
-          <div className="post-img">
-            <img
-              src="src/assets/img/curriculo.webp"
-              draggable="false"
-              alt="Currículo de Milhões"
-            />
-          </div>
-          <h1 className="post-title">Currículo de Milhões</h1>
-          <p className="description">
-            Aprenda a criar o currículo campeão para enviar nos processos
-            seletivos e descubra coisas super importantes que você não sabia
-            antes!
-          </p>
-          <div className="text-center text-lg-start">
-            <a className="btn-em-breve-2">Em breve</a>
-          </div>
-        </div>
-
-        <div className="post-box">
-          <div className="post-img">
-            <img
-              src="src/assets/img/conexoes-linkedin.webp"
-              draggable="false"
-              alt="O poder do LinkedIn"
-            />
-          </div>
-          <h1 className="post-title">O Poder do LinkedIn</h1>
-          <p className="description">
-            Tudo sobre a maior rede profissional de todas e as melhores dicas
-            para deixar o seu perfil atrativo para recrutadores!
-          </p>
-          <div className="text-center text-lg-start">
-            <a className="btn-em-breve-2">Em breve</a>
-          </div>
-        </div>
-
-        <div className="post-box">
-          <div className="post-img">
-            <img
-              src="src/assets/img/preenchendo-post-its.webp"
-              draggable="false"
-              alt="Card Sorting"
-            />
-          </div>
-          <h1 className="post-title">Card Sorting</h1>
-          <p className="description">
-            Conheça mais sobre essa ferramenta bastante utilizada durante para
-            trabalhar a arquitetura de informação de um site ou aplicativo!
-          </p>
-          <div className="text-center">
-            <a href="mini-cursos/card-sorting.html" className="btn-projeto">
-              Ver mais
-            </a>
-          </div>
-        </div>
-
-        <div className="post-box">
-          <div className="post-img">
-            <img
-              src="src/assets/img/homem-e-mulher-juntando-quebra-cabecas.webp"
-              draggable="false"
-              alt="Proposta de Valor"
-            />
-          </div>
-          <h1 className="post-title">Proposta de Valor</h1>
-
-          <p className="description">
-            O que é, como fazer e como ela pode mudar o seu negócio. Hoje, no
-            Menina de UX repórter!
-          </p>
-          <div className="text-center">
-            <a href="mini-cursos/proposta-de-valor.html" className="btn-projeto">
-              Ver mais
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+        {miniCursos.map((item, index) => {
+          return (
+            <div className="post-box" key={`${item}-${index}`}>
+              <div className="post-img">
+                <img src={item.src.image} draggable="false" alt={item.alt} />
+              </div>
+              <h1 className="post-title">{item.titulo}</h1>
+              <p className="description">{item.descricao}</p>
+              <div className="text-center text-lg-start">
+                <Link to={item.btnHref} className={item.btnClass}>
+                  {item.btnTitulo}
+                </Link>
+              </div>
+            </div>
+          );
+        })}
+      </Row>
+    </Container>
   );
 }
 
