@@ -11,7 +11,7 @@ function FilterOptions({props}) {
   };
   return (
     <Row className="justify-content-center" data-aos-delay="100">
-      <Col lg={12} className="d-flex justify-content-center">
+      <Col lg={12} className="d-flex justify-content-center mb-4 pt-2">
         <Nav id="cursos-filters">
           {props.map((filter, index) => {
             return (

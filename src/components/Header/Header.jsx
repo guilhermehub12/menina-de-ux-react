@@ -1,5 +1,7 @@
 import { React, useState, useEffect } from "react";
+import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import AllImages from "../../utils/AllImages";
 import NavBar from "../NavBar/NavBar.jsx";
 import "./Header.css";
 
@@ -30,11 +32,11 @@ function Header() {
         headerScrolled ? "header-scrolled" : ""
       } fixed-top d-flex align-items-center header-transparent`}
     >
-      <div className="container d-flex align-items-center justify-content-between">
+      <Container className="d-flex align-items-center justify-content-between">
         <div className="logo">
-          <Link to="inicio">
+          <Link to="/">
             <img
-              src="../src/assets/img/header-logo.webp"
+              src={AllImages.HeaderLogo}
               alt="Logo Menina de UX"
               className="img-fluid"
             />
@@ -42,7 +44,7 @@ function Header() {
         </div>
 
         <NavBar />
-      </div>
+      </Container>
     </header>
   );
 }

@@ -1,22 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Linkedin, Telegram } from "react-bootstrap-icons";
+import AllImages from "../../utils/AllImages";
 import "./Footer.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Footer() {
   const ods = [
     {
       href: "https://brasil.un.org/pt-br/sdgs/4",
-      src: "../src/assets/img/ods-4.webp",
+      src: { imagem: AllImages.Ods4 },
       alt: "Ods 4 - Educação de Qualidade",
     },
     {
       href: "https://brasil.un.org/pt-br/sdgs/5",
-      src: "../src/assets/img/ods-5.webp",
+      src: { imagem: AllImages.Ods5 },
       alt: "Ods 5 - Igualdade de Gênero",
     },
   ];
-  
+
   const projetos = [
     {
       href: "/criando-seu-case",
@@ -55,12 +57,12 @@ function Footer() {
 
   return (
     <footer className="footer text-center text-lg-start text-muted">
-      <div className="container text-center text-md-start mt-4">
-        <div className="row mt-3">
-          <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+      <Container className="text-center text-md-start mt-4">
+        <Row className="row mt-3">
+          <Col md={3} lg={4} xl={3} className="mx-auto mb-4">
             <div className="logo">
               <img
-                src="../src/assets/img/header-logo.webp"
+                src={AllImages.HeaderLogo}
                 alt="Logo Menina de UX"
                 className="img-fluid"
               />
@@ -70,20 +72,19 @@ function Footer() {
               <p className="text-ods">ODS apoiadas:</p>
               {ods.map((link, index) => {
                 return (
-                  <Link
-                    key={`${link}-${index}`}
-                    to={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img className="img-fluid" src={link.src} alt={link.alt} />
+                  <Link key={`${link}-${index}`} to={link.href} target="_blank">
+                    <img
+                      className="img-fluid"
+                      src={link.src.imagem}
+                      alt={link.alt}
+                    />
                   </Link>
                 );
               })}
             </div>
-          </div>
+          </Col>
 
-          <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <Col md={3} lg={4} xl={2} className="mx-auto mb-4">
             <h6 className="text-uppercase fw-bold mb-4">Projetos</h6>
             {projetos.map((projeto, index) => {
               return (
@@ -94,11 +95,11 @@ function Footer() {
                 </p>
               );
             })}
-          </div>
+          </Col>
 
-          <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <Col md={3} lg={4} xl={2} className="mx-auto mb-4">
             <h6 className="text-uppercase fw-bold mb-4">
-              Sobre a Menina de UX
+              Sobre a <br></br> Menina de UX
             </h6>
             {sobre.map((link, index) => {
               return (
@@ -109,9 +110,9 @@ function Footer() {
                 </p>
               );
             })}
-          </div>
+          </Col>
 
-          <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <Col md={3} lg={4} xl={2} className="mx-auto mb-4">
             <h6 className="text-uppercase fw-bold mb-4">Redes sociais</h6>
             {redesSociais.map((link, index) => {
               return (
@@ -119,7 +120,6 @@ function Footer() {
                   <Link
                     to={link.href}
                     target="_blank"
-                    rel="noopener noreferrer"
                     className="links"
                   >
                     {link.icon}
@@ -128,9 +128,9 @@ function Footer() {
                 </p>
               );
             })}
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
 
       <div className="text-center p-4 copyright">
         Feito com 💙 por <span>Menina de UX</span>

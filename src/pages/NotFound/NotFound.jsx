@@ -9,6 +9,7 @@ function NotFound() {
   return (
     <>
       <Header />
+
       <section id="em-construcao" className="em-construcao">
         <Container>
           <Row className="align-items-center">

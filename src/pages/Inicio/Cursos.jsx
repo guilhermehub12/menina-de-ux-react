@@ -1,7 +1,9 @@
 import React from "react";
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { ArrowRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
+import CursosImages from "../../utils/CursosImages";
+import BootcampsImages from "../../utils/BootcampsImages";
 import "./Cursos.css";
 
 function Cursos() {
@@ -10,50 +12,50 @@ function Cursos() {
       {
         curso: "Curso em Vídeo",
         alternativeText: "Curso em Vídeo",
-        src: "../src/assets/img/cursos/cursoemvideo.webp",
+        src: { imagem: CursosImages.cursoemvideo },
         href: "https://www.cursoemvideo.com/cursos/",
       },
       {
         curso: "Digital Innovation One",
         alternativeText: "Digital Innovation One",
-        src: "../src/assets/img/cursos/dio.webp",
+        src: { imagem: CursosImages.dio },
         href: "https://dio.me/sign-up?ref=U5U6LS080B",
       },
       {
         curso: "Estação Hack",
         alternativeText: "Estação Hack",
-        src: "../src/assets/img/cursos/estacaohack.webp",
+        src: { imagem: CursosImages.estacaohack },
         href: "https://br.cellep.com/estacao-hack-sp/",
       },
       {
         curso: "Mundo SENAI",
         alternativeText: "Mundo SENAI",
-        src: "../src/assets/img/cursos/mundosenai.webp",
+        src: { imagem: CursosImages.mundosenai },
         href: "https://loja.mundosenai.com.br",
       },
     ],
     processoSeletivo: [
       {
-        src: "../src/assets/img/bootcamps/bootcampinhouiux.webp",
+        src: { imagem: BootcampsImages.bootcampinhouiux },
         alt: "Bootcampinho UI/UX",
         titulo: "Bootcampinho UI/UX",
         href: "https://maiane.com.br/bootcampinho-ui-ux-design/",
       },
       {
-        src: "../src/assets/img/bootcamps/proztecnologia.webp",
+        src: { imagem: BootcampsImages.proztecnologia },
         alt: "Capacitação Gratuita em Introdução à Programação",
         titulo: "Capacitação Gratuita em Introdução à Programação",
         subTitulo: "Inscrições por tempo limitado!",
         href: "https://pages.prozeducacao.com.br/proz-tecnologia/",
       },
       {
-        src: "../src/assets/img/bootcamps/gamaacademy.webp",
+        src: { imagem: BootcampsImages.gamaacademy },
         alt: "6 cursos grátis da Gama Academy",
         titulo: "6 cursos grátis da Gama Academy",
         href: "https://app.gama.academy/jornada/e55b1f-semana-de-rebranding/",
       },
       {
-        src: "../src/assets/img/bootcamps/cursosprefeituradebh.webp",
+        src: { imagem: BootcampsImages.cursosprefeituradebh },
         alt: "Cursos de TI da Prefeitura de BH",
         titulo: "Cursos de TI da Prefeitura de BH",
         href: "https://docs.google.com/forms/d/e/1FAIpQLSc9Q6G2A5yakCrGfUaqUFrIH63WYw4Tguo1MpOmcSittFHasQ/viewform/",
@@ -62,12 +64,12 @@ function Cursos() {
   };
   return (
     <section id="cursos" className="cursos-inicio">
-      <div className="container">
+      <Container>
         <div className="section-title" data-aos="fade-up">
           <h2>Cursos Tops</h2>
           <p>Os melhores em várias áreas</p>
         </div>
-      </div>
+      </Container>
 
       <div className="row justify-content-center">
         {posts.cursos.map((curso, index) => {
@@ -79,7 +81,7 @@ function Cursos() {
             >
               <div className="post-img">
                 <img
-                  src={curso.src}
+                  src={curso.src.imagem}
                   className="img-fluid"
                   width={"100%"}
                   draggable="false"
@@ -103,20 +105,23 @@ function Cursos() {
         </Link>
       </div>
 
-      <div className="container">
+      <Container>
         <div className="section-title" data-aos="fade-up">
           <h2>Últimos Processos Seletivos</h2>
           <p>Para você ser o melhor no que faz</p>
         </div>
-      </div>
+      </Container>
 
       <Row className="justify-content-center">
         {posts.processoSeletivo.map((processo, index) => {
           return (
-            <div key={`${processo}-${index}`} className="post-box cursos-item filter-design">
+            <div
+              key={`${processo}-${index}`}
+              className="post-box cursos-item filter-design"
+            >
               <div className="post-img">
                 <img
-                  src={processo.src}
+                  src={processo.src.imagem}
                   className="img-fluid"
                   draggable="false"
                   alt={processo.alt}

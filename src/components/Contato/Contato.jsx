@@ -1,6 +1,9 @@
 import React from "react";
-import { Instagram, Linkedin, At } from "react-bootstrap-icons";
 import "./Contato.css";
+import AllImages from "../../utils/AllImages";
+import { Instagram, Linkedin, At } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
+import { Col, Container, Row } from "react-bootstrap";
 
 function Contato() {
   const AOS_FADE_UP = "fade-up";
@@ -25,9 +28,9 @@ function Contato() {
 
   return (
     <section id="contato" className="contato">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col" data-aos={AOS_FADE_UP}>
+      <Container>
+        <Row className="align-items-center">
+          <Col data-aos={AOS_FADE_UP}>
             <h1>Redes Sociais</h1>
             <p data-aos={AOS_FADE_UP}>
               Me acompanhe nas redes sociais! <br></br>Se quiser conversar sobre
@@ -35,31 +38,30 @@ function Contato() {
             </p>
             {contatos.map((contato, index) => {
               return (
-                <a
+                <Link
                   className="btn btn-primary"
                   key={`${contato}-${index}`}
                   data-aos={AOS_FADE_UP}
-                  href={contato.href}
+                  to={contato.href}
                   role="button"
                 >
                   {contato.icone}
                   {contato.titulo}
-                </a>
+                </Link>
               );
             })}
-          </div>
+          </Col>
 
-          <aside className="col img-fluid" data-aos={AOS_FADE_UP}>
+          <Col className="img-fluid" data-aos={AOS_FADE_UP}>
             <img
-              src="src/assets/img/mulher-redes-sociais.webp"
+              src={AllImages.MulherRedesSociais}
               className="img-fluid animated"
-              width={"70%"}
-              alt=""
+              alt="Ilustração de uma Mulher como se fosse um post nas redes sociais"
               draggable="false"
             />
-          </aside>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }

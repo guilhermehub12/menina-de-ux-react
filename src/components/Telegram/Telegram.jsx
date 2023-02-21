@@ -1,37 +1,40 @@
 import React from "react";
-import "./Telegram.css"
+import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import AllImages from "../../utils/AllImages";
+import "./Telegram.css";
 
 function Telegram() {
   return (
     <section id="telegram" className="telegram">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col align-items-center" data-aos="fade-up">
+      <Container>
+        <Row className="align-items-center">
+          <Col className="align-items-center" data-aos="fade-up">
             <h1>Quer ficar por dentro de todas as novidades?</h1>
             <p>
               Entre no canal do Telegram da Menina de UX e fique sabendo de
               todos os cursos e processos seletivos novos!
             </p>
             <div className="text-center text-lg-start">
-              <a
-                href="https://t.me/meninadeux"
+              <Link
+                to="https://t.me/meninadeux"
                 target="_blank"
                 className="btn-quero-apoiar"
               >
                 Entrar no canal
-              </a>
+              </Link>
             </div>
-          </div>
-          <div className="col align-items-center img-fluid" data-aos="fade-up">
+          </Col>
+          <Col className="align-items-center img-fluid" data-aos="fade-up">
             <img
-              src="src/assets/img/mulher-recebendo-novidades.webp"
+              src={AllImages.MulherRecebendoNovidades}
               className="img-fluid animated"
               alt=""
               draggable="false"
             />
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }

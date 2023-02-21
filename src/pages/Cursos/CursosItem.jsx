@@ -4,14 +4,15 @@ import { CursosItems } from "../../utils/CursosItems";
 import FilterItems from "../../components/Filters/FilterItems";
 import FilterOptions from "../../components/Filters/FilterOptions";
 import "./CursosItem.css";
+import { Container } from "react-bootstrap";
 
 function CursosItem() {
   return (
     <section id="cursos" className="cursos">
-      <div className="cursos-container container">
+      <Container className="cursos-container">
         <FilterOptions props={CursosFilters} />
         <FilterItems props={CursosItems} />
-      </div>
+      </Container>
     </section>
   );
 }

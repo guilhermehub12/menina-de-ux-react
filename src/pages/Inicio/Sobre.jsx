@@ -1,37 +1,40 @@
+import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import AllImages from "../../utils/AllImages";
 import "./Sobre.css";
 
 function Sobre() {
   return (
-    <section id="sobre" className="sobre">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col align-items-center" data-aos="fade-up">
+    <section id="sobre" className="sobre-inicio">
+      <Container>
+        <Row className="align-items-center">
+          <Col className="align-items-center" data-aos="fade-up">
             <img
-              src="src/assets/img/aprovado.webp"
+              src={AllImages.Aprovado}
               className="img-fluid animated"
               alt=""
               draggable="false"
             />
-          </div>
-          <div className="col align-items-center" data-aos="fade-up">
-            <h1>Comece a sua carreira</h1>
+          </Col>
+          <Col className="align-items-center" data-aos="fade-up">
+            <h2>Comece Link sua carreira</h2>
             <p>
-              Aprenda mais sobre a área de tech e design, tenha acesso a
+              Aprenda mais sobre Link área de tech e design, tenha acesso Link
               conteúdos incríveis e entre no mercado de trabalho com chave de
               ouro!
             </p>
             <div className="text-center text-lg-start">
-              <a href="estudos.html" className="btn-quero-apoiar">
-                Estude com a Menina de UX!
-              </a>
+              <Link to="/estude" className="btn-quero-apoiar">
+                Estude com Link Menina de UX!
+              </Link>
             </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
 
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col align-items-center" data-aos="fade-up">
+      <Container>
+        <Row className="align-items-center">
+          <Col className="align-items-center" data-aos="fade-up">
             <h2>
               Crie seu primeiro projeto<br></br> em UX Design
             </h2>
@@ -44,32 +47,32 @@ function Sobre() {
               Figma!
             </p>
             <div className="text-center text-lg-start">
-              <a
-                href="/criando-seu-case/index.html"
+              <Link
+                to="/criando-seu-case"
                 target="_blank"
                 className="btn-quero-apoiar"
               >
                 Crie seu primeiro projeto!
-              </a>
-              <a
-                href="https://www.Figma.com/community/file/1093593396148585854"
+              </Link>
+              <Link
+                to="https://www.Figma.com/community/file/1093593396148585854"
                 target="_blank"
                 className="btn-quero-apoiar-2"
               >
                 Baixar template
-              </a>
+              </Link>
             </div>
-          </div>
-          <div className="col align-items-center img-fluid" data-aos="fade-up">
+          </Col>
+          <Col className="align-items-center img-fluid" data-aos="fade-up">
             <img
-              src="src/assets/img/mulher-designer.webp"
+              src={AllImages.MulherDesigner}
               className="img-fluid animated"
               alt=""
               draggable="false"
             />
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
   );
 }

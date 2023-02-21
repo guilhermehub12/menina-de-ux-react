@@ -3,14 +3,15 @@ import { BootcampsFilters } from "../../utils/BootcampsFilters";
 import { BootcampsItems } from "../../utils/BootcampsItems";
 import FilterItems from "../../components/Filters/FilterItems";
 import FilterOptions from "../../components/Filters/FilterOptions";
+import { Container } from "react-bootstrap";
 
 function BootcampsItem() {
   return (
     <section id="cursos" className="cursos">
-      <div className="cursos-container container">
+      <Container className="cursos-container">
         <FilterOptions props={BootcampsFilters} />
         <FilterItems props={BootcampsItems} />
-      </div>
+      </Container>
     </section>
   );
 }

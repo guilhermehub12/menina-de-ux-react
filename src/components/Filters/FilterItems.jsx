@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight } from "react-bootstrap-icons";
 import { Col, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function FilterItems({ props }) {
   return (
@@ -14,7 +15,7 @@ function FilterItems({ props }) {
           >
             <div className="post-img">
               <img
-                src={item.imageLink}
+                src={item.imageLink.imagem}
                 className="img-fluid"
                 draggable="false"
                 alt={item.imageAlt}
@@ -23,15 +24,14 @@ function FilterItems({ props }) {
             <h1 className="post-title">{item.postTitle}</h1>
             <p className="post-date">{item.postOptional}</p>
             <p className="description">{item.postContent}</p>
-            <a
-              href={item.postLink}
+            <Link
+              to={item.postLink}
               target="_blank"
-              rel="noopener noreferrer"
               className="readmore stretched-link mt-auto"
             >
               <span>Saiba mais</span>
               <ArrowRight />
-            </a>
+            </Link>
           </Col>
         );
       })}
