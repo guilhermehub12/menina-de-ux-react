@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowUp } from "react-bootstrap-icons";
 import "./ArrowToTop.css";
@@ -8,11 +8,7 @@ function ArrowToTop() {
 
   useEffect(() => {
     const toggleBackToTop = () => {
-      if (window.scrollY > 100) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
+      setShowButton(window.scrollY > 350);
     };
 
     window.addEventListener("scroll", toggleBackToTop);
@@ -29,17 +25,15 @@ function ArrowToTop() {
     });
   };
 
-  return (
+  return showButton ? (
     <Link
       onClick={handleClick}
       aria-label="arrow-to-top"
-      className={`back-to-top ${
-        showButton ? "active" : ""
-      } d-flex align-items-center justify-content-center`}
+      className="back-to-top d-flex align-items-center justify-content-center"
     >
       <ArrowUp color={"#FFF"} />
     </Link>
-  );
+  ) : null;
 }
 
 export default ArrowToTop;
