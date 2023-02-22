@@ -17,15 +17,12 @@ function ContatoForm() {
   });
 
   const onSubmit = async (values, { resetForm }) => {
-    const response = await fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(values).toString(),
-    });
-    if (response.status === 200) {
-      resetForm();
-      alert("Obrigado pelo seu contato! Responderemos em breve.");
-    }
+    setTimeout(() => {
+      alert(JSON.stringify(values, null, 2));
+      setSubmitting(false);
+    }, 400);
+    resetForm();
+    alert("Obrigado pelo seu contato! Responderemos em breve.");
   };
 
   return (
