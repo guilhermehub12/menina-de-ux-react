@@ -16,7 +16,7 @@ function ContatoForm() {
     message: Yup.string().required("Por favor, escreva uma mensagem"),
   });
 
-  const onSubmit = async (values, { resetForm }) => {
+  const onSubmit = async ({ resetForm }) => {
     setTimeout(() => {
       resetForm();
       alert("Obrigado pelo seu contato! Responderemos em breve.");
@@ -30,7 +30,7 @@ function ContatoForm() {
       onSubmit={onSubmit}
     >
       {({ errors, touched }) => (
-        <Form name="contato" method="POST" data-netlify="true">
+        <Form name="contato" method="POST" netlify >
           <input type="hidden" name="form-name" value="contato" />
           <div className="form-group">
             <label htmlFor="name">Nome</label>
