@@ -1,5 +1,5 @@
 .footer {
-  background: rgba(245, 197, 210, 0.25);
+  background: #f5c5d240;
   font-family: "Avenir LT STD", sans-serif;
   padding-top: 1%;
 }
@@ -25,6 +25,7 @@
 
 .footer .text-p {
   font-family: "Avenir LT STD", sans-serif;
+  color: #606970;
   font-weight: 500;
   font-size: 18px;
 }
@@ -82,7 +83,13 @@
 
 .footer .text-ods {
   margin-top: 10px;
+  color: #606970;
   font-size: 16px;
+}
+
+.footer h1 {
+  color: #606970;
+  font-size: 18px;
 }
 
 @media (max-width: 991px) {

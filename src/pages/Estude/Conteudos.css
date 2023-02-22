@@ -43,16 +43,16 @@
     border-radius: 50px;
     transition: 0.5s;
     color: #FAFAFA;
-    background: #4678BC;
+    background: #4272b2;
     border-radius: 50px;
     text-align: center;
-    border: #4678BC solid 1px;
+    border: #4272b2 solid 1px;
 }
 
 .conteudos .btn-quero-apoiar:hover {
     background: #FAFAFA;
-    color: #4678BC;
-    border: #4678BC solid 1px;
+    color: #4272b2;
+    border: #4272b2 solid 1px;
 }
 
 .conteudos .btn-em-breve,
@@ -87,7 +87,7 @@
     flex-direction: column;
     background: #20376C;
     border: 0.3px solid #cbcbcb;
-    background-color: rgba(247, 247, 247, 0.2);
+    background-color: #f7f7f733;
     margin: 10px;
     padding: 20px;
 }
@@ -127,7 +127,7 @@
 
 .conteudos .post-date {
     font-size: 16px;
-    color: #757575;
+    color: #696969;
     font-weight: 500;
     font-family: "Avenir LT STD", 'Avenir LT STD', sans-serif;
 }

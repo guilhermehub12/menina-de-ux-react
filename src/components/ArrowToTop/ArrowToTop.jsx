@@ -32,6 +32,7 @@ function ArrowToTop() {
   return (
     <Link
       onClick={handleClick}
+      aria-label="arrow-to-top"
       className={`back-to-top ${
         showButton ? "active" : ""
       } d-flex align-items-center justify-content-center`}

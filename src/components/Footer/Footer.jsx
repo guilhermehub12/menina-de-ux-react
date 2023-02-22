@@ -41,17 +41,17 @@ function Footer() {
     {
       title: "Instagram",
       href: "https://www.instagram.com/meninadeux",
-      icon: <Instagram />,
+      icon: <Instagram className="me-2" />,
     },
     {
       title: "Linkedin",
       href: "https://www.linkedin.com/company/meninadeux/",
-      icon: <Linkedin />,
+      icon: <Linkedin className="me-2" />,
     },
     {
       title: "Telegram",
       href: "https://t.me/meninadeux",
-      icon: <Telegram />,
+      icon: <Telegram className="me-2" />,
     },
   ];
 
@@ -85,7 +85,7 @@ function Footer() {
           </Col>
 
           <Col md={3} lg={4} xl={2} className="mx-auto mb-4">
-            <h6 className="text-uppercase fw-bold mb-4">Projetos</h6>
+            <h1 className="text-uppercase fw-bold mb-4">Projetos</h1>
             {projetos.map((projeto, index) => {
               return (
                 <p key={`${projeto}-${index}`}>
@@ -98,9 +98,9 @@ function Footer() {
           </Col>
 
           <Col md={3} lg={4} xl={2} className="mx-auto mb-4">
-            <h6 className="text-uppercase fw-bold mb-4">
+            <h1 className="text-uppercase fw-bold mb-4">
               Sobre a <br></br> Menina de UX
-            </h6>
+            </h1>
             {sobre.map((link, index) => {
               return (
                 <p key={`${link}-${index}`}>
@@ -113,7 +113,7 @@ function Footer() {
           </Col>
 
           <Col md={3} lg={4} xl={2} className="mx-auto mb-4">
-            <h6 className="text-uppercase fw-bold mb-4">Redes sociais</h6>
+            <h1 className="text-uppercase fw-bold mb-4">Redes sociais</h1>
             {redesSociais.map((link, index) => {
               return (
                 <p className="links" key={`${link}-${index}`}>

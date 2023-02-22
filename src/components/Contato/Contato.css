@@ -38,18 +38,18 @@
     align-items: center;
     text-align: center;
     font-size: 18px;
-    background-color: #4678BC;
+    background-color: #4272b2;
     margin-right: 5px;
     width: auto;
-    border: #4678BC solid 1px;
+    border: #4272b2 solid 1px;
     transition: 0.5s;
     border-radius: 50px;
 }
 
 .contato .btn-primary:hover {
     background-color: #FAFAFA;
-    color: #D5626D;
-    border: #D5626D solid 1px;
+    color: #b5535c;
+    border: #b5535c solid 1px;
     transition: 0.5s;
 }
 

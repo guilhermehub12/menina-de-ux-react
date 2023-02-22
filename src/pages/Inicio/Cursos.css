@@ -1,5 +1,5 @@
 .cursos-inicio {
-    background: rgba(245, 197, 210, 0.25);
+    background: #f5c5d240;
     background-repeat: no-repeat;
     height: auto;
     padding: 0;
@@ -70,7 +70,7 @@
 
 .cursos-inicio .post-date {
     font-size: 18px;
-    color: #757575;
+    color: #696969;
     font-weight: 500;
     font-family: "Avenir LT STD", 'Avenir LT STD', sans-serif;
     margin: 0px 20px 10px 20px !important;
@@ -127,7 +127,7 @@
     color: #20376C;
     background: #FAFAFA;
     border: #FAFAFA solid 1px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 2px 10px #0000000d;
     transition: 0.5s;
 }
 
