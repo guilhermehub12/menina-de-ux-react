@@ -18,11 +18,9 @@ function ContatoForm() {
 
   const onSubmit = async (values, { resetForm }) => {
     setTimeout(() => {
-      alert(JSON.stringify(values, null, 2));
-      setSubmitting(false);
+      resetForm();
+      alert("Obrigado pelo seu contato! Responderemos em breve.");
     }, 400);
-    resetForm();
-    alert("Obrigado pelo seu contato! Responderemos em breve.");
   };
 
   return (
