@@ -1,9 +1,11 @@
-@import url("bootstrap/dist/css/bootstrap.min.css");
-
 @font-face {
-  font-family: "NCS Radhiumz";
-  src: url("../fonts/NCS-Radhiumz.ttf") format("ttf");
+  font-family: NCS Radhiumz;
+  font-style: normal;
+  font-weight: 400;
+  src: local('NCS Radhiumz'), url("/src/fonts/NCS-Radhiumz.ttf") format('woff')
 }
+
+@import url("https://fonts.cdnfonts.com/css/avenir-lt-std");
 
 body {
   font-family: "Avenir LT STD", sans-serif;

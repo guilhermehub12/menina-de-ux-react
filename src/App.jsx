@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/global.css";
 import Inicio from "./routes/Inicio";
 import Estude from "./routes/Estude";

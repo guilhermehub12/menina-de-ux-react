@@ -57,6 +57,7 @@ function Footer() {
 
   return (
     <footer className="footer text-center text-lg-start text-muted">
+      <hr />
       <Container className="text-center text-md-start mt-4">
         <Row className="row mt-3">
           <Col md={3} lg={4} xl={3} className="mx-auto mb-4">
@@ -117,11 +118,7 @@ function Footer() {
             {redesSociais.map((link, index) => {
               return (
                 <p className="links" key={`${link}-${index}`}>
-                  <Link
-                    to={link.href}
-                    target="_blank"
-                    className="links"
-                  >
+                  <Link to={link.href} target="_blank" className="links">
                     {link.icon}
                     {link.title}
                   </Link>
