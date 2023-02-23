@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@djpfs/react-vlibras': ^2.0.2
+  '@formspree/react': ^2.4.1
   '@popperjs/core': ^2.11.6
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
@@ -20,6 +21,7 @@ specifiers:
 
 dependencies:
   '@djpfs/react-vlibras': 2.0.2
+  '@formspree/react': 2.4.1_biqbaboplfbrettd7655fr4n2y
   '@popperjs/core': 2.11.6
   aos: 2.3.4
   bootstrap: 5.2.3_@popperjs+core@2.11.6
@@ -476,6 +478,16 @@ packages:
     dev: true
     optional: true
 
+  /@formspree/react/2.4.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-ZP3oZ7HIMf6KK2sbz4H5XLNXjXBJotI9nveSiTX68Uc1eGzWjBKQqp2qAFlOSjmvgoYMkjJ7NtVD14s49ZrBow==}
+    dependencies:
+      '@stripe/react-stripe-js': 1.16.5_zw7zferaqqsd3ootrrf2mrlpoi
+      '@stripe/stripe-js': 1.47.0
+    transitivePeerDependencies:
+      - react
+      - react-dom
+    dev: false
+
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
     engines: {node: '>=6.0.0'}
@@ -558,6 +570,23 @@ packages:
       react-dom: 18.2.0_react@18.2.0
       uncontrollable: 7.2.1_react@18.2.0
       warning: 4.0.3
+    dev: false
+
+  /@stripe/react-stripe-js/1.16.5_zw7zferaqqsd3ootrrf2mrlpoi:
+    resolution: {integrity: sha512-lVPW3IfwdacyS22pP+nBB6/GNFRRhT/4jfgAK6T2guQmtzPwJV1DogiGGaBNhiKtSY18+yS8KlHSu+PvZNclvQ==}
+    peerDependencies:
+      '@stripe/stripe-js': ^1.44.1
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@stripe/stripe-js': 1.47.0
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@stripe/stripe-js/1.47.0:
+    resolution: {integrity: sha512-jKSClqEIKS2MbPCXlSsseDSZyJ3dVrfUrYMz5LBY1o9iS2tfKbpTZACt8r2g+xyQozI+uHr76pVTyFsmBKA4Mg==}
     dev: false
 
   /@swc/helpers/0.4.14:

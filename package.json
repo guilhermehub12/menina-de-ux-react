@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@djpfs/react-vlibras": "^2.0.2",
+    "@formspree/react": "^2.4.1",
     "@popperjs/core": "^2.11.6",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
