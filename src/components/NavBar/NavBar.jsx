@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, startTransition } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { List, X } from "react-bootstrap-icons";
 import "./NavBar.css";
@@ -42,16 +42,21 @@ function NavBar() {
   }, [location]);
 
   const handleMobileNavToggle = () => {
-    setIsMobileNavOpen(!isMobileNavOpen);
-    setIsListIconActive(!isListIconActive);
+    startTransition(() => {
+      setIsMobileNavOpen(!isMobileNavOpen);
+      setIsListIconActive(!isListIconActive);
+    });
   };
 
   const navbarClass = `navbar ${isMobileNavOpen ? "navbar-mobile" : ""}`;
 
   const handleMobileDropdownClick = (e) => {
-    if (isMobileNavOpen) {
-      e.preventDefault();
-      e.currentTarget.nextElementSibling.classList.toggle("dropdown-active");
+    const isMobileLink = e.currentTarget.classList.contains("nav-link");
+    if (isMobileNavOpen && isMobileLink) {
+      const dropdown = e.currentTarget.nextElementSibling;
+      if (dropdown) {
+        dropdown.classList.toggle("dropdown-active");
+      }
     }
   };
 

@@ -1,6 +1,6 @@
 .hero-inicio,
 .hero-carousel {
-  background: rgba(245, 197, 210, 0.25);
+  background: #f5c5d240;
   width: 100%;
   padding: 120px 0px;
 }
@@ -58,26 +58,26 @@
 
 .hero-inicio .btn-descobrir-cursos {
   color: #FAFAFA;
-  background: #4678BC;
-  border: #4678BC solid 1px;
+  background: #4272b2;
+  border: #4272b2 solid 1px;
   margin-right: 10px;
 }
 
 .hero-inicio .btn-descobrir-cursos:hover {
   background: #FAFAFA;
-  color: #4678BC;
+  color: #4272b2;
   border: #FAFAFA solid 1px;
 }
 
 .hero-inicio .btn-descobrir-processos {
-  color: #D5626D;
-  border: #D5626D solid 1px;
+  color: #ab4e57;
+  border: #ab4e57 solid 1px;
 }
 
 .hero-inicio .btn-descobrir-processos:hover {
-  background: #D5626D;
+  background: #b5535c;
   color: #FAFAFA;
-  border: #D5626D solid 1px;
+  border: #b5535c solid 1px;
 }
 
 @media (min-width: 1350px) {

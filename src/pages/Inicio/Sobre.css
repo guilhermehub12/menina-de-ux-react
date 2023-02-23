@@ -33,10 +33,10 @@
     border-radius: 50px;
     transition: 0.5s;
     color: #FAFAFA;
-    background: #4678BC;
+    background: #4272b2;
     border-radius: 50px;
     text-align: center;
-    border: #4678BC solid 1px;
+    border: #4272b2 solid 1px;
     padding: 10px 30px;
     margin-right: 5px;
 }
@@ -52,8 +52,8 @@
     border-radius: 50px;
     text-align: center;
     background: none;
-    color: #4678BC;
-    border: #4678BC solid 1px;
+    color: #4272b2;
+    border: #4272b2 solid 1px;
 }
 
 .sobre-inicio .btn-quero-apoiar-2 {
@@ -64,16 +64,16 @@
     display: inline-block;
     border-radius: 50px;
     transition: 0.5s;
-    color: #D5626D;
+    color: #b5535c;
     background: none;
     border-radius: 50px;
     text-align: center;
-    border: #D5626D solid 1px;
+    border: #b5535c solid 1px;
     padding: 10px 30px;
 }
 
 .sobre-inicio .btn-quero-apoiar-2:hover {
-    background: #D5626D;
+    background: #b5535c;
     color: #FAFAFA;
 }
 

@@ -88,12 +88,12 @@ function Cursos() {
                   alt={curso.alternativeText}
                 />
               </div>
-              <h3 className="post-title">{curso.curso}</h3>
+              
               <Link
                 to={curso.href}
                 target="_blank"
                 className="readmore stretched-link mt-auto"
-              ></Link>
+              ><h3 className="post-title">{curso.curso}</h3></Link>
             </div>
           );
         })}

@@ -1,29 +1,22 @@
 .back-to-top {
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    right: 15px;
-    bottom: 15px;
-    z-index: 990;
-    background: #D5626D;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    transition: all 0.4s;
-  }
-  
-  .back-to-top i {
-    font-size: 28px;
-    color: #FAFAFA;
-    line-height: 0;
-  }
-  
-  .back-to-top:hover {
-    background: #4678BC;
-    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-  }
-  
-  .back-to-top.active {
-    visibility: visible;
-    opacity: 1;
-  }
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 990;
+  background: #ab4e57;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #FAFAFA;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #4272b2;
+  box-shadow: 0px 0 30px #0129701a;
+}

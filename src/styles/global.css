@@ -2,19 +2,18 @@
   font-family: NCS Radhiumz;
   font-style: normal;
   font-weight: 400;
-  src: local('NCS Radhiumz'), url("/src/fonts/NCS-Radhiumz.ttf") format('woff')
+  src: local('NCS Radhiumz'), url("/src/fonts/NcsRadhiumz.woff") format('woff')
 }
 
 @import url("https://fonts.cdnfonts.com/css/avenir-lt-std");
 
 body {
-  font-family: "Avenir LT STD", sans-serif;
   color: #20376C;
   background-color: #FAFAFA;
 }
 
 a {
-  color: #D5626D;
+  color: #ab4e57;
   text-decoration: none;
   transition: 0.5s;
 }
@@ -34,7 +33,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #4678BC;
+  background-color: #4272b2;
   border-radius: 20px;
   border: 3px solid #FAFAFA;
 }
@@ -153,10 +152,10 @@ section {
   border-radius: 50px;
   transition: 0.5s;
   color: #FAFAFA;
-  background: #4678BC;
+  background: #4272b2;
   border-radius: 50px;
   text-align: center;
-  border: #4678BC solid 1px;
+  border: #4272b2 solid 1px;
   padding: 10px 30px;
 }
 
@@ -175,8 +174,8 @@ section {
   border-radius: 50px;
   text-align: center;
   background: none;
-  color: #4678BC;
-  border: #4678BC solid 1px;
+  color: #4272b2;
+  border: #4272b2 solid 1px;
 }
 
 .sobre .btn-quero-apoiar-2,
@@ -189,18 +188,18 @@ section {
   display: inline-block;
   border-radius: 50px;
   transition: 0.5s;
-  color: #D5626D;
+  color: #ab4e57;
   background: none;
   border-radius: 50px;
   text-align: center;
-  border: #D5626D solid 1px;
+  border: #ab4e57 solid 1px;
   padding: 10px 30px;
 }
 
 .sobre .btn-quero-apoiar-2:hover,
 .telegram .btn-quero-apoiar-2:hover,
 .apoie .btn-quero-apoiar-2:hover {
-  background: #D5626D;
+  background: #ab4e57;
   color: #FAFAFA;
 }
 
