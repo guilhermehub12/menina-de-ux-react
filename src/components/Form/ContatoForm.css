@@ -1,20 +1,31 @@
 .contact-form {
-    display: grid;
-    margin: 0 auto;
-    max-width: 85em;
-    background-color: #aa6d6d;
-    padding: 50px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(245, 197, 210, 0.25);
+    padding: 25px 50px;
+}
+
+.contact-form h1 {
+    font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form label {
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .contact-form input,
 .contact-form textarea {
-    background-color: #f6f6f6;
+    background-color: #FAFAFA;
     border: none;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 20px;
     color: #333;
 }
 
@@ -24,18 +35,24 @@
 }
 
 .contact-form button {
-    background-color: #fd5058;
-    border: none;
-    border-radius: 30px;
-    padding: 15px 30px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-family: "Avenir LT STD", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
     letter-spacing: 1px;
-    margin-top: 30px;
-    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #FAFAFA;
+    background: #20376C;
+    border-radius: 50px;
+    text-align: center;
+    border: #20376C solid 1px;
+    padding: 10px 30px;
+    margin-right: 5px;
 }
 
 .contact-form button:hover {
-    background-color: #e02e3d;
+    background-color: #FAFAFA;
+    color: #20376C;
+
 }

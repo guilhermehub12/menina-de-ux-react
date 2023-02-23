@@ -10,8 +10,8 @@ function Contatos() {
     <>
       <Header />
       <Telegram />
-      <ContatoForm />
       <Contato />
+      <ContatoForm />
       <Footer />
     </>
   );
